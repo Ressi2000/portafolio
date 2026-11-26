@@ -1,0 +1,35 @@
+/* Hoja de impresión exclusiva para exportar el CV de Ressi Figuera a PDF */
+@media print{
+  @page{margin:14mm 15mm}
+  html,body{height:auto!important;overflow:visible!important;background:#fff!important;color:#1b1826!important;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif!important;font-size:10.5pt!important;line-height:1.42!important}
+  #app{display:none!important}
+  #printCV{display:block!important;color:#1b1826}
+
+  .pcv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12pt;border-bottom:2pt solid #3b2a6e;padding-bottom:8pt;margin-bottom:12pt}
+  .pcv-head h1{margin:0;font-size:20pt;letter-spacing:-.01em;color:#1b1826}
+  .pcv-role{margin:2pt 0 0;font-size:11pt;font-weight:600;color:#4a3787}
+  .pcv-contact{display:flex;flex-direction:column;align-items:flex-end;font-size:9.5pt;color:#474259;gap:1pt}
+
+  .pcv-sec{margin-bottom:11pt;break-inside:avoid}
+  .pcv-sec h2{margin:0 0 5pt;font-size:10pt;text-transform:uppercase;letter-spacing:.08em;color:#4a3787;border-bottom:.75pt solid #d8d2ea;padding-bottom:2pt}
+  .pcv-sec p{margin:0 0 4pt}
+
+  .pcv-job{margin-bottom:7pt;break-inside:avoid}
+  .pcv-job-h{display:flex;justify-content:space-between;gap:8pt;align-items:baseline;margin-bottom:3pt}
+  .pcv-job-h strong{font-size:10.5pt;color:#1b1826}
+  .pcv-job-h span{font-size:9.5pt;color:#5b5570;white-space:nowrap}
+  .pcv-job ul{margin:0;padding-left:14pt}
+  .pcv-job li{margin-bottom:2pt}
+
+  .pcv-grid{display:grid;grid-template-columns:1fr 1fr;gap:7pt 12pt}
+  .pcv-proj{break-inside:avoid;border-left:2pt solid #d8d2ea;padding-left:6pt}
+  .pcv-proj strong{font-size:10pt}
+  .pcv-proj small{color:#5b5570;font-size:8.5pt}
+  .pcv-proj p{margin:2pt 0;font-size:9.5pt}
+  .pcv-stack{display:block;color:#4a3787!important;font-weight:600}
+
+  .pcv-skills{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:3pt 14pt}
+  .pcv-skills div{display:flex;gap:4pt}
+  .pcv-skills dt{font-weight:700;color:#1b1826;white-space:nowrap}
+  .pcv-skills dd{margin:0;color:#332e45}
+}
